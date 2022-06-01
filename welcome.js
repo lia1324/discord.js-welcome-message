@@ -23,7 +23,6 @@ client.on('guildMemberAdd', member => {
   member.user.send(`${member.user.username}님! ${member.guild.name}서버에 들어오신걸 환영합니다`).then().catch((error) => { if (error) return })
   const role = button.guild.roles.cache.get("역활 아디")
   member.roles.add(role)
-  member.setNickname(`고유번호 | ${member.user.username} | 직업`);
   // code...
   try {
   } catch (error) {
